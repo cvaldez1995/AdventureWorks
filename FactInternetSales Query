@@ -31,8 +31,7 @@ FROM
 
 WHERE 
 NOT [FactInternetSales].[OrderQuantity] = 0 -- removing this customer
-AND [FactInternetSales].[OrderDate] NOT LIKE '%2019%' 
-	OR [FactInternetSales].[ShipDateKey] NOT LIKE '%2019%'
+AND [FactInternetSales].[OrderDateKey] NOT LIKE '2019%'
 
 ORDER BY
 OrderDateKey ASC, SalesOrderNumber DESC  
